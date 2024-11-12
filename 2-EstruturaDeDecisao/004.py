@@ -3,8 +3,7 @@
 while True:
 
     
-    letras = input("Infome uma letra \n")
-    letras.lower()
+    letras = input("Infome uma letra \n").lower()
     vogais = "aeiou"
 
     if letras in vogais:

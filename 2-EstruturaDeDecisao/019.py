@@ -12,12 +12,11 @@ while True:
         texto_centena = "Centena" + ("s" if centena > 1 else "")
         texto_dezena = "Dezena" + ("s" if dezena > 1 else "")
         texto_unidade = "Unidade" + ("s" if unidade > 1 else"") 
-
         if centena > 0:
-            print(f"{centena} {texto_centena}", end="")
+            print(f"{centena} {texto_centena}", end=",")
         if dezena > 0:
-            print(f", {dezena} {texto_dezena}", end="")
+            print(f" {dezena} {texto_dezena}", end=",")
         if unidade > 0:
-            print(f" e {unidade} {texto_unidade}\n")
+            print(f" e {unidade} {texto_unidade}")
     else:
         print("Numero Invalido")

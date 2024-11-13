@@ -2,10 +2,9 @@
 
 while True:
     ano = int(input("Digite um ano para descobrir se ele e bissexto: "))
-    anobissexto = ano % 4 
-    anobissexto2 = ano % 400
-    
-    if anobissexto2 == 0 or anobissexto == 0:
-        print(f"Ano {ano} digitado e Bissexto")
+
+    if ano % 4 == 0 and ano % 100 != 0 or ano % 400 ==0:
+        print(f"O Ano {ano} é Bissexto")
     else:
-        print("Tente outro ano")
+        print(f"O ano {ano} não é bissexto, Tente outro ano")
+
